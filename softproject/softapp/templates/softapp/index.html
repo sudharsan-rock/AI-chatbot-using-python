@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        flex-direction: column;
+    }
+    form{
+        border: 1px solid #0AA1DD;
+        position: fixed;
+        left: 68%;
+        top:35%;
+        padding: 40px;
+        width: 25%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        background-color:#E8F9FD;
+        flex-direction: column;
+        border-radius: 30px;
+    }
+
+    .input{
+        position: fixed;
+        top: 85%;
+        right: 120px;
+        padding: 15px;
+        width: 20%; 
+        border-radius: 50px;
+    }
+
+    .btn{
+        position: fixed;
+        padding: 15px;
+        top:85%;
+        border-radius:25%;
+        background-color:green;
+        color:#DBDFFD;
+        border: 1px solid green;
+        align-self:flex-end;
+        left:93%;
+        /* border-radius: 50px; */
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background: rgb(34, 114, 40);
+        transition: 0.25s ease-in-out;
+    }
+    .h1{
+        border: 1px solid #0AA1DD;
+        position: fixed;
+        bottom:55%;
+        display: flex;
+        align-self:center;
+        align-items: center;
+        justify-content: center;
+        width: 462px;
+        height: 7%;
+        background-color:#0AA1DD;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px; 
+        }
+    .you{ 
+        border: 1px solid #DBDFFD;
+        padding: 10px;
+        align-self: flex-end;                                                                                                         
+        border-radius: 50px;
+        background-color: #DBDFFD;
+    }
+    .bot{
+        border: 1px solid #DBDFFD;
+        padding: 10px;
+        background-color: #DBDFFD;
+        border-radius: 50px;
+        align-self: start;
+    }
+    .foot{
+        position: absolute;
+        bottom:-10%;
+        left:2%;
+    }
+ 
+
+.main-content {
+min-height: 1000px; 
+}
+
+.hero {
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+backface-visibility: hidden;
+height: 100vh;
+overflow: hidden;
+position: relative;
+width: 100%;
+
+@media screen and (min-width:640px) {
+    background-position: 50% 0;
+}
+
+}
+
+.hero-container {
+box-sizing: border-box;
+height: auto;
+padding: 30px 50px;
+position: relative;
+z-index: 2;
+
+-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+-webkit-transition-duration: 1.2s;
+transition-duration: 1.2s;
+
+@media screen and (min-width:640px) {
+    height: 100%;
+}
+}
+p {
+    color: white;
+    font-size: 13px;
+font-weight: bold;
+letter-spacing: 6px;
+opacity: 0.8;
+text-transform: uppercase;
+text-align: left;
+}
+
+
+.hero-button {
+background: rgba(255,255,255,0.8);
+color: #44575b;
+font-size: 24px;
+float: left;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-top: 30px;
+padding: 20px 90px;
+text-decoration: none;
+}
+
+.hero-title {
+
+color: #ffc220;
+font-size: 17vw; 
+font-weight: 500;
+letter-spacing: 1px;
+width: 85%;
+font-family:'Alumni Sans Inline One';
+position: relative;
+top:100%;
+@media screen and (min-width:640px) {
+    font-size: 10vw;
+}
+}
+
+.main-content {
+height: auto;
+padding: 30px 50px;
+position: relative;
+top:50%;
+width: 60%;
+}
+
+.main-content p {
+color: #25373D;
+font-size: 18px;
+line-height: 1.5;
+}
+
+
+@keyframes fadeInLeft {
+from {
+opacity: 0;
+-webkit-transform: translate3d(-12px, 0, 0);
+transform: translate3d(-12px, 0, 0);
+}
+
+to {
+opacity: 1;
+-webkit-transform: none;
+transform: none;
+}
+}
+
+.fadeInLeft {
+-webkit-animation-name: fadeInLeft;
+animation-name: fadeInLeft;
+}
+
+
+.animate {
+animation-duration: 0.75s;
+animation-fill-mode: both;
+animation-timing-function: cubic-bezier(0.2, 0.3, 0.25, 0.9);
+}
+
+.delay {
+animation-delay: 1s;
+}
+
+.delay-400 {
+animation-delay: 0.4s;
+}
+
+.delay-500 {
+animation-delay: 0.5s;
+}
+
+.delay-600 {
+animation-delay: 0.6s;
+}
+
+.delay-700 {
+animation-delay: 0.7s;
+}
+
+.delay-800 {
+animation-delay: 0.8s;
+}
+</style>
+<body style="background-color: rgba(8, 0, 27, 0.874);">
+    <link href='https://fonts.googleapis.com/css?family=Alumni Sans Inline One' rel='stylesheet'>
+    
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+<section class="hero image-as-background" style="background-image: url('https://static.seekingalpha.com/cdn/s3/uploads/getty_images/494856377/image_494856377.jpg?io=getty-c-w750');">
+  <div class="hero-container">
+    <p class="animate fadeInLeft delay-400" style="color:hsl(0, 0%, 0%)">Walmart | Help center</p>
+    <!-- <h2 class="hero-title animate fadeInLeft delay-600" >WALMART</h2> -->
+
+    <div>
+        <form action="." method="POST" data-closable>
+            {%csrf_token%}
+            <h1 class="h1" style="color: white ;">CHAT WITH US</h1><br>
+                <br><br>
+                <you class="you">
+                {{input}}</you><br><br>
+                <bot class="bot">
+                {{response}}</bot>
+                <br><br>
+                <input class="input" type="text" name = "text" placeholder="type to chat" /></input>
+                <button type="submit"  class="btn">Send</button>
+            
+        </form>
+    </div>
+  </div>    
+</section>
+<link href='https://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Basic' rel='stylesheet'>
+<div style="color: white;font-family: 'Basic';" class="foot">
+    <h2 style="font-family: Fondamento;">Contact Us</h3>
+    <div>Contact us to provide a comment or ask a question about your local store or our corporate headquarters.</div>
+
+    <div>If you have a question about item pricing, please contact customer service below.</div>
+    
+    <div>Call 1800-100-911 </div>
+    Email Customer Service : walmart@gmail.com </div> 
+     <div  style=" position: absolute;bottom:-50%; font-size:xx-large;opacity: 0; "> Lorem ipsum dolor sit, amet consectetur adipisic 177013 Neque nisi temporibus, accusantium commodi sapiente pariatur molestiae d 2d for life</div>
+    <script>
+        document.write('<script src="https://sharehulk.com/api/sharingbutton.php?type=vertical&u=' + encodeURIComponent(document.location.href) + '"></scr' + 'ipt>');
+    </script>     
+</body>
+</html>
